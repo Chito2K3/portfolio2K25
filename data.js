@@ -4,7 +4,7 @@
  */
 export const PORTFOLIO_DATA = {
   profile: {
-    name: "Chito",
+    name: "Chito Saba",
     handle: "Chito2K3",
     title: "Software Engineer & Healthcare Systems Developer",
     bio: "Specializing in robust hospital information systems, pharmacy logistics & dispensing automation, cooperative financial management, and resilient web & mobile applications.",
