@@ -79,8 +79,8 @@ export const PORTFOLIO_DATA = {
       techStack: ["TypeScript", "JavaScript", "HTML5", "CSS3", "Financial Algorithms"],
       language: "TypeScript",
       githubUrl: "https://github.com/Chito2K3/ARMMC-Coop-Loan-System",
-      liveUrl: null,
-      status: "Enterprise System"
+      liveUrl: "https://armmc-coop-loan-system.vercel.app/",
+      status: "Live on Vercel"
     },
     {
       id: "phramacy-stock-loan",
