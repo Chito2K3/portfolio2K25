@@ -62,13 +62,13 @@ export const PORTFOLIO_DATA = {
     },
     {
       id: "armmc-coop-loan",
-      title: "ARMMC Coop Loan Management System",
+      title: "Hospital Employee Cooperative Loan & Amortization System",
       repoName: "ARMMC-Coop-Loan-System",
       category: "fintech",
       featured: true,
-      tagline: "Cooperative lending, amortization schedules & member capital ledger system",
-      description: "An enterprise-grade cooperative loan management portal built for the Amang Rodriguez Memorial Medical Center (ARMMC) Cooperative. Streamlines loan applications, automated amortization computations, deductions, and member shares.",
-      challenge: "Manual ledger calculations and spreadsheet-based loan schedules created administrative bottlenecks, calculation variances, and slow approval cycles for cooperative hospital staff.",
+      tagline: "Cooperative lending, diminishing amortization schedules & member capital ledger system",
+      description: "An enterprise-grade cooperative loan management portal engineered for a tertiary hospital multi-purpose cooperative in Metro Manila. Streamlines loan applications, automated diminishing amortization computations, deductions, and member shares.",
+      challenge: "Manual ledger calculations and spreadsheet-based loan schedules created administrative bottlenecks, calculation variances, and slow approval cycles for cooperative hospital workers.",
       solution: "Engineered an automated loan lifecycle system using TypeScript that generates accurate diminishing/flat amortization tables, monitors principal/interest payments, and maintains member dividend ledgers.",
       highlights: [
         "Automated amortization schedule engine with flexible interest terms",
@@ -79,8 +79,8 @@ export const PORTFOLIO_DATA = {
       techStack: ["TypeScript", "JavaScript", "HTML5", "CSS3", "Financial Algorithms"],
       language: "TypeScript",
       githubUrl: "https://github.com/Chito2K3/ARMMC-Coop-Loan-System",
-      liveUrl: "https://armmc-coop-loan-system.vercel.app/",
-      status: "Live on Vercel"
+      liveUrl: null,
+      status: "Enterprise System"
     },
     {
       id: "phramacy-stock-loan",
