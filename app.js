@@ -43,14 +43,26 @@ class PortfolioApp {
     this.modalGithubLink = document.getElementById('modalGithubLink');
     this.modalLiveLink = document.getElementById('modalLiveLink');
 
-    // Copy / Toast
+    // Copy / Toast & Theme
     this.copyEmailBtn = document.getElementById('copyEmailBtn');
     this.footerContactBtn = document.getElementById('footerContactBtn');
     this.toastNotice = document.getElementById('toastNotice');
     this.siteHeader = document.getElementById('siteHeader');
+    this.themeToggleBtn = document.getElementById('themeToggleBtn');
   }
 
   initEventHandlers() {
+    // Theme toggle
+    if (this.themeToggleBtn) {
+      this.themeToggleBtn.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('portfolio-theme', newTheme);
+        this.showToast(`Switched to ${newTheme === 'light' ? 'Light' : 'Dark'} Mode`);
+      });
+    }
+
     // Search input
     if (this.searchInput) {
       this.searchInput.addEventListener('input', (e) => {
