@@ -154,23 +154,29 @@ body {
 .brand-badge {
   width: 38px;
   height: 38px;
+  flex-shrink: 0;
   border-radius: 10px;
-  background: linear-gradient(135deg, rgba(56, 189, 248, 0.15), rgba(16, 185, 129, 0.15));
+  background: var(--bg-surface);
   border: 1px solid var(--border-light);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 16px;
-  color: var(--text-primary);
-  box-shadow: 0 0 16px rgba(56, 189, 248, 0.1);
-  transition: transform var(--transition-smooth), border-color var(--transition-smooth);
+  overflow: hidden;
+  box-shadow: 0 0 16px rgba(56, 189, 248, 0.15);
+  transition: transform var(--transition-smooth), border-color var(--transition-smooth), box-shadow var(--transition-smooth);
 }
 
 .brand-wrapper:hover .brand-badge {
-  transform: scale(1.05);
-  border-color: var(--accent-cyan);
+  transform: scale(1.06);
+  border-color: var(--accent-mint);
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.25);
+}
+
+.brand-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .brand-name {
